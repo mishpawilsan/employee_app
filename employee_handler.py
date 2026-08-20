@@ -8,6 +8,9 @@ def lambda_handler(event, context):
         {"id": 102, "name": "Alex Murphy", "role": "Data Analyst", "department": "Analytics"}
     ]
     
+    # ADD THIS NEW LINE BELOW:
+    print("Successfully retrieved employee list.")
+    
     return {
         'statusCode': 200,
         'headers': {'Content-Type': 'application/json'},
